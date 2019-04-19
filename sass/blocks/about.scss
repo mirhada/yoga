@@ -1,0 +1,95 @@
+.about-us {
+    position: relative;
+    background: url(../img/about-us.png) no-repeat;
+    background-position: 17% 15%;
+    background-size: 40%;
+    padding-top: 0;
+    margin-bottom: 10%;
+
+    &__heading {
+        margin-bottom: 7%;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 12%;
+    }
+
+    &__content {
+        flex-basis: 50%;
+    }
+
+    &__list {
+        list-style-image: url(../img/marker-1.png);
+        padding-left: 12%;
+    }
+
+    &__item {
+      padding-left: 2rem;
+      margin-bottom: 4%;
+    }
+}
+
+@media (max-width: $desktop-width) {
+    .about-us {
+        background-position: 7% 40%;
+    }
+    .about-us__content {
+        flex-basis: 50%;
+    }
+    .about-us__wrapper {
+        padding-right: 12rem;
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .about-us {
+        background-position: 50% 50%;
+        background-size: 90%;
+    }
+    .about-us__content {
+        flex-basis: 100%;
+    }
+    .about-us__wrapper {
+        padding-right: 0;
+        justify-content: left;
+    }
+    .about-us__list {
+        padding-left: 2%;
+    }
+    .decoration {
+        display: none;
+    }
+}
+
+
+
+.decoration {
+    position: absolute;
+    
+    &-img-1 {
+        left: 0;
+        top: 10rem;
+    }
+
+    &-img-2 {
+        right: 0;
+        top: -15rem;
+    }
+
+    &-img-3 {
+        left: 0;
+        bottom: -20rem;
+    }
+
+    &-img-4 {
+        right: 0;
+        bottom: -40rem; 
+    }
+
+    &-img-5 {
+        right: 0;
+        bottom: -50rem; 
+    }
+}

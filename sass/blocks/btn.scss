@@ -1,0 +1,26 @@
+@import "../variables/colors";
+
+.btn {
+  border: 2px solid $link-color;
+  border-radius: 50px;
+  color: $link-color;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all .2s;
+  padding: 7px 40px;
+
+  &:hover {
+  	background-color: #ff6a6d;
+    box-shadow: 0 0 10rem 0.2rem rgba(0, 0, 0, 0.23);
+    color: white;
+    transform: scale(1.07);
+  }
+}
+
+.btn-blog {
+  border: none;
+  background: transparent;
+  color: #3cbef1;
+  cursor: pointer;
+  padding: 3% 5%;
+}

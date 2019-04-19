@@ -1,0 +1,81 @@
+@import "../mixins/text";
+@import "../variables/resolution";
+
+.features {
+    margin-bottom: 15%;
+    &__heading {
+        margin-bottom: 4%;
+    }
+
+    &__description {
+        color: rgba(0, 0, 0, 0.651);
+        text-align: center;
+        display: block;
+        max-width: 50%;
+        line-height: 4rem;
+        margin: 0 auto;      
+        margin-bottom: 10%;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    &__item {
+        max-width: 30%;
+        text-align: center;
+    }
+}
+
+.item {
+    &__image {
+        max-width: 60%;
+        margin-bottom: 5%;
+    }
+
+    &__description {
+        line-height: 2.7rem;
+    }
+
+    &__heading {
+        margin-bottom: 7%;
+    }
+}
+.container {
+    width: 75%;
+    margin: 0 auto;
+}
+.heading--2 {
+    @include bold-text;
+    text-align: center;
+}
+
+.heading--3 {
+    @include bold-text;
+    font-size: 25px;
+    line-height: 30px;
+}
+.primary-text {
+    @include small-text;
+    color: #000;
+    line-height: 27px;
+}
+@media (max-width: $mobile-width-only) {
+
+    .features__items {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .features__item {
+        max-width: 100%;
+        &:not(:last-child) {
+            margin-bottom: 5rem;
+        }
+    }
+    .features__description {
+        max-width: 75%;
+    }
+}

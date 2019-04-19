@@ -1,0 +1,57 @@
+.first-blog {
+    position: relative;
+    background: url(../img/the-healing.png) no-repeat;
+    background-position: 85% 20%;
+    background-size: 30%;
+    padding-top: 10%;
+    margin-bottom: 20%;
+
+    &__wrapper {
+        max-width: 50%;
+        padding-left: 4%;
+    }
+
+    &__heading {
+        text-align: left;
+        margin-bottom: 6%;
+    }
+
+    &__text-wrapper {
+        padding-left: 5%;
+        padding-right: 15%;
+    }
+
+    &__text {
+        margin-bottom: 10%;
+    }
+}
+
+@media (max-width: $desktop-width) {
+    .first-blog__wrapper {
+        max-width: 70%;
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .first-blog {
+        background-size: 50%;
+    }
+    .first-blog__wrapper {
+            max-width: 100%;
+    }
+    .first-blog__heading {
+        font-size: 35px;
+    }
+}
+@media (max-width: 2560px) {
+    .first-blog {
+        background-size: 27%;
+    }
+    .second-blog {
+        background-size: 27%;
+    }
+    .about-us {
+        background-size: 27%;
+    }
+    
+}
